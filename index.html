@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furniture — The Best Online Furniture Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span>📞 Call Us: +1 245-456-789</span>
+    <span class="top-offer">Get an extra 20% off on your first order</span>
+    <span>✉️ support@furniture.store</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="wrap header-in">
+    <a class="logo" href="#"><span class="logo-dot">🪑</span> Furniture<span class="logo-dot2">.</span></a>
+    <nav class="nav">
+      <a href="#" class="active">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#deals">Deals</a>
+      <a href="#blogs">Blog</a>
+      <a href="#faqs">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <input id="searchInput" type="search" placeholder="Search chairs, sofas, lighting…">
+      <button class="icon-btn" id="wishBtn" title="Wishlist">♡ <span id="wishCount">0</span></button>
+      <button class="icon-btn cart-btn" id="cartBtn" title="Cart">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow">— The Best Online Furniture Store</p>
+      <h1>Explore Our Modern<br>Furniture Collection</h1>
+      <p class="muted">Beautiful, comfortable and long-lasting furniture for every room of your home. Modern design, honest prices, and delivery you can rely on.</p>
+      <div class="hero-cta">
+        <a class="btn btn-green" href="#products">Shop Now →</a>
+        <a class="btn btn-outline" href="#categories">Browse Categories</a>
+      </div>
+      <div class="hero-rating">
+        <span class="stars">★★★★★</span>
+        <strong>4.9 Rating</strong>
+        <span class="muted">· Loved by 2,000+ customers</span>
+      </div>
+    </div>
+    <div class="hero-gallery">
+      <figure class="hero-main">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Modern living room sofa">
+        <figcaption>Living Room · 2,000+ Items</figcaption>
+      </figure>
+      <figure class="hero-small">
+        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=600&q=80" alt="Modern bedroom">
+        <figcaption>Bed Room · 1,500+ Items</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features wrap">
+    <div class="feature">🚚 <div><strong>Free Shipping</strong><p>Free shipping on orders above $50</p></div></div>
+    <div class="feature">💳 <div><strong>Flexible Payment</strong><p>Multiple payment methods accepted</p></div></div>
+    <div class="feature">🎧 <div><strong>24/7 Support</strong><p>We are here to help, any time</p></div></div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="section wrap">
+    <p class="eyebrow center">Shop By Category</p>
+    <h2 class="center">Find Furniture For Every Room</h2>
+    <div class="cat-grid">
+      <article class="cat-card">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=700&q=80" alt="Chairs">
+        <h3>Chairs</h3>
+        <ul><li>Wooden Chairs</li><li>Arm Chairs</li><li>Office Chairs</li><li>Bar Stools</li><li>Club Chairs</li></ul>
+        <button class="link-btn" data-filter-cat="chairs">Shop Chairs →</button>
+      </article>
+      <article class="cat-card">
+        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=700&q=80" alt="Sofa">
+        <h3>Sofa</h3>
+        <ul><li>Recliner Sofas</li><li>Sectional Sofas</li><li>Leather Sofas</li><li>Sofa Beds</li><li>Love Seats</li></ul>
+        <button class="link-btn" data-filter-cat="sofa">Shop Sofas →</button>
+      </article>
+      <article class="cat-card">
+        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=700&q=80" alt="Lighting">
+        <h3>Lighting</h3>
+        <ul><li>Floor Lights</li><li>Table Lights</li><li>Ceiling Lights</li><li>Wall Lights</li><li>Reading Lamps</li></ul>
+        <button class="link-btn" data-filter-cat="lighting">Shop Lighting →</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section wrap">
+    <p class="eyebrow center">Our Products</p>
+    <h2 class="center">Our Products Collections</h2>
+    <div class="tabs" id="productTabs">
+      <button class="tab active" data-tab="all">All Products</button>
+      <button class="tab" data-tab="latest">Latest Products</button>
+      <button class="tab" data-tab="bestseller">Best Sellers</button>
+      <button class="tab" data-tab="featured">Featured Products</button>
+    </div>
+    <p id="noResults" class="center muted hidden">No product matches your search. Try another word, like “chair” or “sofa”.</p>
+    <div class="product-grid" id="productGrid">
+
+      <article class="product" data-name="Wooden Sofa Chair" data-cat="chairs" data-tab="latest featured">
+        <span class="badge">-50%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=700&q=80" alt="Wooden Sofa Chair">
+        <div class="stars">★★★★★ <span>4.9</span></div>
+        <h3>Wooden Sofa Chair</h3>
+        <p class="price">$80.00 <del>$160.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Wooden Sofa Chair" data-price="80">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Circular Sofa Chair" data-cat="chairs" data-tab="latest bestseller">
+        <span class="badge">-33%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=700&q=80" alt="Circular Sofa Chair">
+        <div class="stars">★★★★★ <span>5.0</span></div>
+        <h3>Circular Sofa Chair</h3>
+        <p class="price">$108.00 <del>$160.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Circular Sofa Chair" data-price="108">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Wooden Nightstand" data-cat="sofa" data-tab="featured">
+        <span class="badge">-20%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=700&q=80" alt="Wooden Nightstand">
+        <div class="stars">★★★★☆ <span>4.8</span></div>
+        <h3>Wooden Nightstand</h3>
+        <p class="price">$54.00 <del>$68.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Wooden Nightstand" data-price="54">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Bean Bag Chair" data-cat="chairs" data-tab="bestseller">
+        <span class="badge">-20%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=700&q=80" alt="Bean Bag Chair">
+        <div class="stars">★★★★☆ <span>4.8</span></div>
+        <h3>Bean Bag Chair</h3>
+        <p class="price">$72.00 <del>$90.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Bean Bag Chair" data-price="72">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Modern Lounge Sofa" data-cat="sofa" data-tab="latest featured bestseller">
+        <span class="badge">-25%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Modern Lounge Sofa">
+        <div class="stars">★★★★★ <span>4.9</span></div>
+        <h3>Modern Lounge Sofa</h3>
+        <p class="price">$320.00 <del>$429.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Modern Lounge Sofa" data-price="320">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Pendant Lamp Set" data-cat="lighting" data-tab="featured">
+        <span class="badge">-15%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=700&q=80" alt="Pendant Lamp Set">
+        <div class="stars">★★★★☆ <span>4.7</span></div>
+        <h3>Pendant Lamp Set</h3>
+        <p class="price">$65.00 <del>$76.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Pendant Lamp Set" data-price="65">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Wood Dining Chair" data-cat="chairs" data-tab="latest">
+        <span class="badge">-10%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=700&q=80" alt="Wood Dining Chair">
+        <div class="stars">★★★★☆ <span>4.6</span></div>
+        <h3>Wood Dining Chair</h3>
+        <p class="price">$95.00 <del>$105.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Wood Dining Chair" data-price="95">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Office Chair Pro" data-cat="chairs" data-tab="bestseller">
+        <span class="badge">-21%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=700&q=80" alt="Office Chair Pro">
+        <div class="stars">★★★★★ <span>4.9</span></div>
+        <h3>Office Chair Pro</h3>
+        <p class="price">$120.00 <del>$152.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Office Chair Pro" data-price="120">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Classic Armchair" data-cat="chairs" data-tab="featured bestseller">
+        <span class="badge">-18%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=700&q=80" alt="Classic Armchair">
+        <div class="stars">★★★★★ <span>5.0</span></div>
+        <h3>Classic Armchair</h3>
+        <p class="price">$145.00 <del>$178.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Classic Armchair" data-price="145">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Wood Coffee Table" data-cat="sofa" data-tab="latest">
+        <span class="badge">-12%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=700&q=80" alt="Wood Coffee Table">
+        <div class="stars">★★★★☆ <span>4.7</span></div>
+        <h3>Wood Coffee Table</h3>
+        <p class="price">$140.00 <del>$159.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Wood Coffee Table" data-price="140">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Reading Floor Lamp" data-cat="lighting" data-tab="latest featured">
+        <span class="badge">-20%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=80" alt="Reading Floor Lamp">
+        <div class="stars">★★★★☆ <span>4.8</span></div>
+        <h3>Reading Floor Lamp</h3>
+        <p class="price">$58.00 <del>$72.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Reading Floor Lamp" data-price="58">Add to Cart</button>
+      </article>
+
+      <article class="product" data-name="Cozy Bedroom Set" data-cat="sofa" data-tab="bestseller featured">
+        <span class="badge">-30%</span><button class="wish" aria-label="Add to wishlist">♡</button>
+        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=700&q=80" alt="Cozy Bedroom Set">
+        <div class="stars">★★★★★ <span>4.9</span></div>
+        <h3>Cozy Bedroom Set</h3>
+        <p class="price">$499.00 <del>$715.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Cozy Bedroom Set" data-price="499">Add to Cart</button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Flash Sale -->
+  <section class="flash wrap">
+    <div class="flash-text">
+      <p class="eyebrow">Flash Sale</p>
+      <h2>Flash Sale!</h2>
+      <p>Get 25% off — Limited Time Offer</p>
+      <div class="countdown" id="countdown">
+        <div><strong id="cdDays">04</strong><span>Days</span></div>
+        <div><strong id="cdHours">14</strong><span>Hours</span></div>
+        <div><strong id="cdMins">48</strong><span>Minutes</span></div>
+        <div><strong id="cdSecs">18</strong><span>Seconds</span></div>
+      </div>
+      <a class="btn btn-yellow" href="#products">Shop Now →</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Flash sale living room">
+  </section>
+
+  <!-- Deals of the Day -->
+  <section id="deals" class="section wrap">
+    <p class="eyebrow">Today's Deals</p>
+    <h2>Deals of the Day</h2>
+    <div class="deal-grid">
+      <article class="deal">
+        <span class="badge">-34%</span>
+        <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=700&q=80" alt="Recliner Chair Wood">
+        <div class="stars">★★★★★ <span>5.0</span></div>
+        <h3>Recliner Chair Wood</h3>
+        <p class="price">$105.00 <del>$160.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Recliner Chair Wood" data-price="105">Add to Cart</button>
+      </article>
+      <article class="deal">
+        <span class="badge">-20%</span>
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=700&q=80" alt="Recliner Chair Steel">
+        <div class="stars">★★★★☆ <span>4.9</span></div>
+        <h3>Recliner Chair Steel</h3>
+        <p class="price">$80.00 <del>$100.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Recliner Chair Steel" data-price="80">Add to Cart</button>
+      </article>
+      <article class="deal">
+        <span class="badge">-21%</span>
+        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=700&q=80" alt="Gaming Chair Pro">
+        <div class="stars">★★★★★ <span>4.9</span></div>
+        <h3>Gaming Chair Pro</h3>
+        <p class="price">$189.00 <del>$240.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Gaming Chair Pro" data-price="189">Add to Cart</button>
+      </article>
+      <article class="deal">
+        <span class="badge">-15%</span>
+        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=700&q=80" alt="Classic Armchair">
+        <div class="stars">★★★★★ <span>5.0</span></div>
+        <h3>Classic Armchair</h3>
+        <p class="price">$145.00 <del>$170.00</del></p>
+        <button class="btn btn-green btn-sm add-cart" data-name="Classic Armchair" data-price="145">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Promo banners -->
+  <section class="promo wrap">
+    <article class="promo-card promo-dark">
+      <div><p>Flat 20% Discount</p><h3>Latest Gaming<br>Chairs</h3><a class="btn btn-green btn-sm" href="#products">Shop Now →</a></div>
+      <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=500&q=80" alt="Gaming chair">
+    </article>
+    <article class="promo-card promo-yellow">
+      <div><p>Flat 10% Discount</p><h3>Wood Chair<br>Collection</h3><a class="btn btn-green btn-sm" href="#products">Shop Now →</a></div>
+      <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=500&q=80" alt="Wood chair">
+    </article>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section wrap">
+    <p class="eyebrow center">Testimonials</p>
+    <h2 class="center">What Our Clients Say</h2>
+    <div class="testi-grid">
+      <article class="testi">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Leslie Alexander">
+        <div><strong>Leslie Alexander</strong><p class="muted">Interior Designer</p><div class="stars">★★★★★ 5.0</div></div>
+        <p>“The sofa quality is excellent and delivery was fast. My living room finally looks exactly like the pictures.”</p>
+      </article>
+      <article class="testi">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="Jenny Wilson">
+        <div><strong>Jenny Wilson</strong><p class="muted">Home Owner</p><div class="stars">★★★★★ 5.0</div></div>
+        <p>“Great prices, honest descriptions, and very helpful support. I ordered chairs for my dining room and love them.”</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Blogs -->
+  <section id="blogs" class="section wrap">
+    <div class="section-head">
+      <div><p class="eyebrow">News &amp; Blogs</p><h2>Our Latest News &amp; Blogs</h2></div>
+      <a class="btn btn-green btn-sm" href="#blogs">View All Blogs</a>
+    </div>
+    <div class="blog-grid">
+      <article class="blog">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Furniture trends">
+        <h3>Furniture Trends 2024: What's Hot &amp; What's Not</h3>
+        <a href="#blogs">Read More →</a>
+      </article>
+      <article class="blog">
+        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=700&q=80" alt="Perfect sofa guide">
+        <h3>The Ultimate Guide to Choosing the Perfect Sofa</h3>
+        <a href="#blogs">Read More →</a>
+      </article>
+      <article class="blog">
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=700&q=80" alt="Dining table">
+        <h3>Choosing the Right Dining Table For Your Lifestyle</h3>
+        <a href="#blogs">Read More →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <section class="section wrap">
+    <p class="eyebrow center">Follow Us</p>
+    <h2 class="center">Follow Us On Instagram</h2>
+    <div class="insta-grid">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="Instagram living room">
+      <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=500&q=80" alt="Instagram bedroom">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=500&q=80" alt="Instagram chair">
+      <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=500&q=80" alt="Instagram dining">
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="section wrap faq-wrap">
+    <p class="eyebrow center">FAQs</p>
+    <h2 class="center">Question? Look here.</h2>
+    <div class="faq">
+      <button class="faq-q">What types of furniture do you offer? <span>+</span></button>
+      <div class="faq-a"><p>Chairs, sofas, beds, tables, storage and lighting for living rooms, bedrooms, dining rooms and offices.</p></div>
+    </div>
+    <div class="faq">
+      <button class="faq-q">What payment methods do you accept? <span>+</span></button>
+      <div class="faq-a"><p>Cards, bank transfer and cash on delivery, depending on your location.</p></div>
+    </div>
+    <div class="faq">
+      <button class="faq-q">Can I track my furniture delivery? <span>+</span></button>
+      <div class="faq-a"><p>Yes. After checkout you get an order number, and our team shares delivery updates with you.</p></div>
+    </div>
+    <div class="faq">
+      <button class="faq-q">What is your return policy? <span>+</span></button>
+      <div class="faq-a"><p>If an item arrives damaged or different from the description, contact support within 7 days for a replacement or refund.</p></div>
+    </div>
+    <div class="faq">
+      <button class="faq-q">What materials are used in your furniture? <span>+</span></button>
+      <div class="faq-a"><p>Solid wood, engineered wood, metal frames, quality fabrics and leather, chosen for durability and comfort.</p></div>
+    </div>
+    <div class="faq">
+      <button class="faq-q">Are there any discounts or promotions available? <span>+</span></button>
+      <div class="faq-a"><p>Yes. Check the Flash Sale and Deals of the Day sections, and subscribe to the newsletter for 20% off your first order.</p></div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter wrap">
+    <p class="eyebrow center">Our Newsletter</p>
+    <h2 class="center">Subscribe to Our Newsletter to Get<br>Updates to Our Latest Collection</h2>
+    <p class="center muted">Get 20% off on your first order by subscribing to our newsletter.</p>
+    <form id="newsForm" class="news-form">
+      <input type="email" id="newsEmail" placeholder="Enter your email address" required>
+      <button class="btn btn-green" type="submit">Subscribe</button>
+    </form>
+    <p id="newsMsg" class="center hidden success">Thanks! You are subscribed. Your 20% welcome offer is on its way.</p>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div><a class="logo light" href="#"><span class="logo-dot">🪑</span> Furniture.</a><p class="muted light">Modern furniture for modern homes — comfortable, durable and beautifully designed.</p></div>
+    <div><h4>Company</h4><ul><li>About Us</li><li>Shop</li><li>Blog</li><li>Careers</li></ul></div>
+    <div><h4>Customer Services</h4><ul><li>Help Centre</li><li>Track Your Order</li><li>Returns</li><li>Shipping Info</li></ul></div>
+    <div><h4>Contact Info</h4><ul><li>📞 +1 245-456-789</li><li>✉️ support@furniture.store</li><li>📍 Main Street, Furniture City</li></ul></div>
+  </div>
+  <div class="wrap footer-bottom"><span>Copyright © 2025 Furniture. All Rights Reserved.</span><span>Home · Shop · Categories · Blog</span></div>
+</footer>
+
+<!-- Cart drawer -->
+<div class="overlay hidden" id="overlay"></div>
+<aside class="cart-drawer hidden" id="cartDrawer">
+  <div class="cart-head"><h3>Your Cart</h3><button id="closeCart">✕</button></div>
+  <div id="cartItems"></div>
+  <div class="cart-foot">
+    <p id="shipNote"></p>
+    <div class="progress"><div id="shipBar"></div></div>
+    <p class="total">Total: <strong id="cartTotal">$0.00</strong></p>
+    <div class="pay-methods">
+      <p><strong>Payment Method</strong></p>
+      <label><input type="radio" name="payMethod" value="cod" checked> Cash on Delivery</label>
+      <label><input type="radio" name="payMethod" value="online"> Online Payment (Card)</label>
+    </div>
+    <button class="btn btn-green full" id="checkoutBtn">Place Order</button>
+    <p id="orderMsg" class="hidden success"></p>
+    <div id="payFormBox" class="pay-box hidden">
+      <h4>Pay Online</h4>
+      <p>Order: <strong id="payOrderNo"></strong> · Total to pay: <strong id="payTotal"></strong></p>
+      <form id="payForm" novalidate>
+        <label class="pay-field">Cardholder Name
+          <input id="cardName" type="text" placeholder="Name on card" autocomplete="cc-name">
+        </label>
+        <label class="pay-field">Card Number
+          <input id="cardNumber" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" autocomplete="cc-number" maxlength="19">
+        </label>
+        <div class="pay-row2">
+          <label class="pay-field">Expiry Date
+            <input id="cardExpiry" type="text" inputmode="numeric" placeholder="MM/YY" autocomplete="cc-exp" maxlength="5">
+          </label>
+          <label class="pay-field">CVV
+            <input id="cardCvv" type="password" inputmode="numeric" placeholder="123" autocomplete="cc-csc" maxlength="4">
+          </label>
+        </div>
+        <button class="btn btn-green full" id="payNowBtn" type="submit">Pay Now</button>
+      </form>
+    </div>
+  </div>
+</aside>
+<div class="toast hidden" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
